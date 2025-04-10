@@ -6,10 +6,11 @@
     align-items: center;
     min-height: 100vh;
     flex-wrap: wrap;
-    padding: 5px;
+    padding: 75px;
    
 }
 .custom-container {
+    padding-top: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -59,20 +60,3 @@
 }
 
 
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 30px;
-    font-size: 14px;
-}
-
-.footer-links a {
-    color: lightgray;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-.footer-links a:hover {
-    color: white;
-}
