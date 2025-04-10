@@ -72,27 +72,34 @@
     <p><strong>Please Note:</strong></p>
     <ul>
       <li>You cannot register for more than two conduits at a time.</li>
-      <li>Your choices should reflect your passion and commitment to excel.</li>
-      <li>Switching conduits mid-course requires administrative approval.</li>
+      <li>Violations may result in suspension or removal.</li>
     </ul>
+
     <label>
-      <input type="checkbox" id="agree">
-      I have read and agree to the registration policy.
+      <input type="checkbox" id="agreeCheckbox">
+      I have read and agree to the above policy.
     </label>
+
     <button id="continueBtn" disabled>Continue</button>
   </div>
 
   <script>
-    const checkbox = document.getElementById('agree');
+    const checkbox = document.getElementById('agreeCheckbox');
     const button = document.getElementById('continueBtn');
 
-    checkbox.addEventListener('change', function() {
-      if (this.checked) {
+    checkbox.addEventListener('change', () => {
+      if (checkbox.checked) {
         button.disabled = false;
         button.classList.add('enabled');
       } else {
         button.disabled = true;
         button.classList.remove('enabled');
+      }
+    });
+
+    button.addEventListener('click', () => {
+      if (!button.disabled) {
+        window.location.href = 'sign.html';
       }
     });
   </script>
