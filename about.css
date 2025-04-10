@@ -15,6 +15,7 @@ body {
 .top-text {
   text-align: center;
   padding: 40px 20px;
+  padding-top: 100px;
 }
 
 .top-text h1 {
